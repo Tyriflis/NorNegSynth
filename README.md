@@ -9,6 +9,15 @@ In this repository you will find the dataset, which can be used to evaluate mode
 
 The core objective of the dataset is this: To be able to compare how negation is handled in models for SA, by having several minimal pairs, i.e. pairs of sentences where the only difference is the added or removed negation expression.
 
+Table 6.3 below, taken from the thesis, shows the difference between the original test set and NorNegSynth, in terms of how many of each type has been added.
+
+![Overview of differences between original test set and which cues have been added.](table6_3.png?raw=true "Overview from Thesis")
+
+
+Table 7.4 below shows how the dataset can be used to compare performance on various negating expressions for three different models. In the table, the three models PERIN, a Sequence model and a Graph-based model are compared in terms of different negation cues they are able to crrectly predict polarity for. Note for example the difference in ratio for the PERIN model and the two others for the negating cue "u" (un-).
+
+![Example of how models can be compared using the dataset.](table7_4.png?raw=true "Overview from Thesis")
+
 ## Core Limitations
 
 Not all negations are represented equally, and care should be made when drawing conclusions from the less frequent examples.
@@ -39,6 +48,7 @@ Letters are used to indicate newly added pairs. The original sentences have no a
 ```
 
 In these examples, the sentence with the added letter "-a" has an "ikke" (not) added, and the sentence with "-b" added has an additional change in having "og" being changed to "men" to better reflect the changes in polarity.
+
 
 ## Urls
 
