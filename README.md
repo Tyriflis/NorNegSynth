@@ -17,10 +17,28 @@ Beware that types of negation can vary with domains, and thus the scores from th
 
 
 
-## Notes for the code
+## Code and Data
 
+nornegsynth.json is the file containing the parallell data.
 
+The format is similar to that of NoReC fine, but the IDs are updated to reflect the pairs.
 
+There is an additional META label which conains the attribute Artificial, which can be False or True. This refers to whether the pair is originally in NoReC fine, or if it is a new addition.
+
+Letters are used to indicate newly added pairs. The original sentences have no additional letter, while negated sentences (or sentenced with negation removed) have a letter appended to their ID, as in the sentences below, where there is one original sentence, and two new additions. 
+
+```
+"sent_id": "201344-02-01",
+"text": "Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker .",
+
+"sent_id": "201344-02-01-a"
+"text": "Garmin Fenix Chronos er ikke meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker .",
+
+"sent_id": "201344-02-01-b",
+"text": "Garmin Fenix Chronos er ikke meget god tur- og treningskamerat , men mye flottere enn vanlige smartklokker .",
+```
+
+In these examples, the sentence with the added letter "-a" has an "ikke" (not) added, and the sentence with "-b" added has an additional change in having "og" being changed to "men" to better reflect the changes in polarity.
 
 ## Urls
 
